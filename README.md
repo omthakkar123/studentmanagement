@@ -11,11 +11,12 @@ login
 admin login id pw
 =================
 ### add student
-* user id
+* student id
 * name
 * address
 * phone no
 * email
+* last qualification
 * submit
 ### add balance
 * student id

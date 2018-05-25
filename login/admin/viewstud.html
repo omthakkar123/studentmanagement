@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Admin Portal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">Admin</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+		 aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link" href="index.html">Home </a>
+				<a class="nav-item nav-link" href="addstud.html">Add Student</a>
+				<a class="nav-item nav-link" href="addbala.html">Add Balance</a>
+				<a class="nav-item nav-link" href="adddoc.html">Add Document</a>
+				<a class="nav-item nav-link active" href="#">View Student Profile</a>
+				<form class="form-inline my-2 my-lg-0" action="../../index.html">
+					<button class="btn btn-success my-2 my-sm-0" type="submit">Logout</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<br>
+		<form>
+			<div class="form-group">
+				<label for="studid">Student ID</label>
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="1234">
+					<div class="input-group-append">
+						<button class="btn btn-outline-secondary" type="button">Button</button>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="name">Name</label>
+				<input type="text" class="form-control-plaintext" readonly id="name">
+			</div>
+			<div class="form-group">
+				<label for="phone">Phone Number</label>
+				<input type="number" class="form-control-plaintext" readonly id="phone">
+			</div>
+			<div class="form-group">
+				<label for="email">Email address</label>
+				<input type="email" class="form-control-plaintext" readonly id="email">
+			</div>
+			<div class="form-group">
+				<label for="address">Address</label>
+				<textarea class="form-control-plaintext" readonly id="address" rows="3"></textarea>
+			</div>
+		</form>
+		<label for="list">Documents</label>
+		<ul class="list-group">
+			<li class="list-group-item"><a href="#">SSC Passing</a></li>
+			<li class="list-group-item"><a href="#">SSC Leaving</a></li>
+			<li class="list-group-item"><a href="#">HSC Passing</a></li>
+			<li class="list-group-item"><a href="#">HSC Leaving</a></li>
+		</ul>
+		<br>
+	</div>
+</body>
+
+</html>
