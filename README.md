@@ -1,13 +1,3 @@
-home
-----
-about us
---------
-contact us
-----------
-login
------
-
-
 admin login id pw
 =================
 ### add student
@@ -78,12 +68,6 @@ office login id pw
 * clear
 ### view transaction
 * transaction detail table all ids
-### change password
-* user id
-* old pw
-* new pw
-* confirm pw
-* change
 ### logout
 
 
@@ -96,12 +80,6 @@ library login id pw
 * pay clear
 ### view transaction
 * transaction detail table all ids
-### change password
-* user id
-* old pw
-* new pw
-* confirm pw
-* change
 ### logout
 
 
@@ -115,12 +93,6 @@ canteen login id pw
 * pay clear
 ### view transaction
 * transaction detail table all ids
-### change password
-* user id
-* old pw
-* new pw
-* confirm pw
-* change
 ### logout
 
 
@@ -133,12 +105,6 @@ stationary login id pw
 * pay clear
 ### view transaction
 * transaction detail table all ids
-### change password
-* user id
-* old pw
-* new pw
-* confirm pw
-* change
 ### logout
 
 

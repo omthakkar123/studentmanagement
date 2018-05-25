@@ -3,7 +3,7 @@
 
 <head>
 		<meta charset="UTF-8">
-	<title>Admin Portal - Add Document</title>
+	<title>Library Portal - New Transaction</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../../assets/css/bootstrap.css">
 	<script src="../../assets/js/jquery-3.3.1.js"></script>
@@ -54,19 +54,17 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="#">Admin</a>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+		<a class="navbar-brand" href="#">Library</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
 				<a class="nav-item nav-link" href="index.html">Home</a>
-				<a class="nav-item nav-link" href="addstud.html">Add Student</a>
-				<a class="nav-item nav-link" href="addbala.html">Add Balance</a>
-				<a class="nav-item nav-link active" href="#">Add Document</a>
-				<a class="nav-item nav-link" href="viewstud.html">View Student Profile</a>
-				<form class="form-inline my-2 my-lg-0" action="../../index.html">
+				<a class="nav-item nav-link active" href="#">New Transaction</a>
+				<a class="nav-item nav-link" href="viewtran.html">View Transaction</a>
+				<form class="form-inline my-2 my-lg-0">
 					<button class="btn btn-success my-2 my-sm-0" type="submit">Logout</button>
 				</form>
 			</div>
@@ -111,102 +109,30 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="sscpass">SSC Passing Certificate</label>
+				<label for="name">Name</label>
+				<input type="text" class="form-control" id="name" placeholder="Abc Xyz">
+			</div>
+			<div class="form-group">
+				<label for="balance">Balance</label>
 				<div class="input-group">
-					<div class="custom-file">
-						<input type="file" class="custom-file-input" id="sscpass">
-						<label class="custom-file-label" for="sscpass">Choose file</label>
+					<div class="input-group-prepend">
+						<div class="input-group-text">₹</div>
 					</div>
-					<div class="input-group-append">
-						<button class="btn btn-outline-secondary" type="button">Button</button>
-					</div>
+					<input type="number" class="form-control" id="balance" placeholder="3,500/-">
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="sscleave">SSC Leaving Certificate</label>
+				<label for="amount">Amount</label>
 				<div class="input-group">
-					<div class="custom-file">
-						<input type="file" class="custom-file-input" id="sscleave">
-						<label class="custom-file-label" for="sscleave">Choose file</label>
+					<div class="input-group-prepend">
+						<div class="input-group-text">₹</div>
 					</div>
-					<div class="input-group-append">
-						<button class="btn btn-outline-secondary" type="button">Button</button>
-					</div>
+					<input type="number" class="form-control" id="amount" placeholder="1,000/-">
 				</div>
 			</div>
-			<div class="form-group">
-				<label for="hscpass">HSC Passing Certificate</label>
-				<div class="input-group">
-					<div class="custom-file">
-						<input type="file" class="custom-file-input" id="hscpass">
-						<label class="custom-file-label" for="hscpass">Choose file</label>
-					</div>
-					<div class="input-group-append">
-						<button class="btn btn-outline-secondary" type="button">Button</button>
-					</div>
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="hscleave">HSC Leaving Certificate</label>
-				<div class="input-group">
-					<div class="custom-file">
-						<input type="file" class="custom-file-input" id="hscleave">
-						<label class="custom-file-label" for="hscleave">Choose file</label>
-					</div>
-					<div class="input-group-append">
-						<button class="btn btn-outline-secondary" type="button">Button</button>
-					</div>
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="gradpass">Graduation Passing Certificate</label>
-				<div class="input-group">
-					<div class="custom-file">
-						<input type="file" class="custom-file-input" id="gradpass">
-						<label class="custom-file-label" for="gradpass">Choose file</label>
-					</div>
-					<div class="input-group-append">
-						<button class="btn btn-outline-secondary" type="button">Button</button>
-					</div>
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="gradleave">Graduation Leaving Certificate</label>
-				<div class="input-group">
-					<div class="custom-file">
-						<input type="file" class="custom-file-input" id="gradleave">
-						<label class="custom-file-label" for="gradleave">Choose file</label>
-					</div>
-					<div class="input-group-append">
-						<button class="btn btn-outline-secondary" type="button">Button</button>
-					</div>
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="pgpass">Post-Graduation Passing Certificate</label>
-				<div class="input-group">
-					<div class="custom-file">
-						<input type="file" class="custom-file-input" id="pgpass">
-						<label class="custom-file-label" for="pgpass">Choose file</label>
-					</div>
-					<div class="input-group-append">
-						<button class="btn btn-outline-secondary" type="button">Button</button>
-					</div>
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="pgleave">Post-Graduation Leaving Certificate</label>
-				<div class="input-group">
-					<div class="custom-file">
-						<input type="file" class="custom-file-input" id="pgleave">
-						<label class="custom-file-label" for="pgleave">Choose file</label>
-					</div>
-					<div class="input-group-append">
-						<button class="btn btn-outline-secondary" type="button">Button</button>
-					</div>
-				</div>
-			</div>
+			<button type="submit" class="btn btn-primary">Pay Now</button>
 		</form>
+		<br>
 	</div>
 </body>
 
