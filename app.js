@@ -13,13 +13,10 @@
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       // User is signed in.
-      document.getElementById("main").style.display = "block";
-      document.getElementById("login").style.display = "none";
       console.log(user);
+      window.location.href="/login/admin";
     } else {
       // No user is signed in.
-      document.getElementById("main").style.display = "none";
-      document.getElementById("login").style.display = "block";
       console.log(user);
     }
   });
@@ -28,7 +25,6 @@ firebase.auth().onAuthStateChanged(function(user) {
 function login(){
     var input_Email = document.getElementById("inputEmail").value;
     var input_Password = document.getElementById("inputPassword").value;
-    window.alert("asdf");
     firebase.auth().signInWithEmailAndPassword(input_Email, input_Password).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
