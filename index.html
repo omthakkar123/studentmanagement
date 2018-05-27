@@ -1,27 +1,33 @@
 <!doctype html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Sign in</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link href="assets/css/main.css" rel="stylesheet">
-  </head>
 
-  <body class="text-center">
-    <form class="form-signin">
-      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-      <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-      <input type="password" name="pword" id="inputPassword" class="form-control" placeholder="Password" required>
-      <select class="custom-select" name="role" required>
-            <option>Admin</option>
-            <option>Canteen</option>
-            <option>Library</option>
-            <option>Office</option>
-            <option>Stationery</option>
-            <option>Student</option>
-        </select>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      <br><br>
-    </form>
-  </body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Sign in</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+  <div class="form-signin">
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+    <select class="custom-select" required>
+      <option>Admin</option>
+      <option>Canteen</option>
+      <option>Library</option>
+      <option>Office</option>
+      <option>Stationery</option>
+      <option>Student</option>
+    </select>
+    <button class="btn btn-lg btn-primary btn-block" onclick="login();">Log in</button>
+    <br>
+    <br>
+    <button onclick="logout();">Log Out</button>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>
